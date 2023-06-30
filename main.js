@@ -1,3 +1,5 @@
+const array = [1,2, [1.1, 1.2, [2.1, 2.2, [3.1, 3.2], 2.3], 1.3], 3];
+
 function generateList(array) {
     let list = '<ul>';
 
@@ -11,7 +13,5 @@ function generateList(array) {
 
     return list += '</ul>'
 }
-
-const array = [1,2, [1.1, 1.2, [2.1, 2.2, [3.1, 3.2], 2.3], 1.3], 3];
 
 document.body.innerHTML = generateList(array);
